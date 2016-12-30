@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">BibliotecaMaterial</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="user_menu_historial">Historial</string>
+    <string name="user_menu_findMyFriends">Find My Friends</string>
+    <string name="user_menu_AddFriends">Afegeix Amics</string>
+    <string name="user_menu_Settings">Configuració</string>
+    <string name="Area_usuari_toolbar_title">Àrea Usuari</string>
+</resources>

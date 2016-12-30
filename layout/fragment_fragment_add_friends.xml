@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.guillemllados.bibliotecamaterial.fragments.fragmentsAreaUsuari.FragmentAddFriends"
+    android:orientation="vertical">
+
+    <Button
+        android:text="SOLICITUDS D'AMISTAD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btt_addFriends"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/Layout_search">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:text="Nom"
+                android:ems="10"
+                android:id="@+id/ET_nomABuscar"
+                android:layout_weight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                app:fabSize="mini"
+                app:srcCompat="@android:drawable/ic_menu_search"
+                android:id="@+id/FB_search"
+                android:layout_weight="1"
+                app:backgroundTint="@color/colorPrimary"
+                app:rippleColor="@color/cardview_dark_background"
+                android:tint="@color/cardview_dark_background"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="40dp" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <com.example.ExpandableHeightGridView
+        android:id="@+id/gridAddFriends"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:horizontalSpacing="2dp"
+        android:isScrollContainer="false"
+        android:numColumns="1"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="20dp"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

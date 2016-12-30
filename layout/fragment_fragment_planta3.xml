@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.fragmentsPlantes.FragmentPlanta2"
+    android:orientation="vertical">>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp">
+
+            <TextView
+                android:text="Bucs Estudi:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/TVPlanta2"
+                android:textStyle="normal|bold"
+                android:textSize="30sp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp" />
+
+
+            <lecho.lib.hellocharts.view.PieChartView
+                android:id="@+id/chartP2"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:text="Taules totals: "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/TVP2Total"
+                android:layout_marginTop="16dp"
+                android:textSize="24sp" />
+
+            <TextView
+                android:text="Taules lliures:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/TVP2Lliures"
+                android:layout_marginTop="16dp"
+                android:textSize="24sp" />
+
+            <TextView
+                android:text="Taules ocupades"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/TVP2Ocupades"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>
